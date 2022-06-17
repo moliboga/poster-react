@@ -6,6 +6,7 @@ import {
 import HomePage from "./components/pages/HomePage";
 import CataloguePage from "./components/pages/CataloguePage";
 import Header from "./components/Header";
+import {USERS_URL, POSTS_URL} from "./utils/Constants";
 
 function App() {
     return (
@@ -14,11 +15,10 @@ function App() {
             {/*http://localhost:3000/ - значит HomePage*/}
             {/*http://localhost:3000/catalogur - значит CataloguePage*/}
             <BrowserRouter>
-                {/*сюда ебанули хедер, шоб он был на всех страницах*/}
                 <Header/>
                 <Routes>
                     <Route path="/" element={<HomePage/>}/>
-                    <Route path="/catalogue" element={<CataloguePage/>}/>
+                    <Route path={POSTS_URL} element={<CataloguePage/>}/>
                 </Routes>
             </BrowserRouter>
         </>

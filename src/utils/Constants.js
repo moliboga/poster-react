@@ -1,5 +1,5 @@
-export const API_URL = "https://dummyjson.com/";
+export const API_URL = "http://localhost:8080/api/";
 
-export const PRODUCT_URL = API_URL + "products/";
-export const CATEGORY_URL = PRODUCT_URL + "categories/"
+export const USERS_URL = API_URL + "users/";
+export const POSTS_URL = API_URL + "posts/"
 
